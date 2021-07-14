@@ -1,0 +1,49 @@
+/*
+  hamburger
+*/
+.hamburger {
+  display : block;
+  position: absolute;
+  z-index : 300;
+  right : rem(30);
+  top   : rem(30);
+  width : rem(30);
+  height: rem(30);
+  cursor: pointer;
+  text-align: center;
+}
+
+.hamburger__border {
+    display: block;
+    position: absolute;
+    width: rem(30);
+    height: rem(2);
+    left: rem(6);
+    background: #000;
+    transition: 0.3s ease-in-out;
+    &:nth-child(1) {
+      top: rem(10);
+    }
+    &:nth-child(2) {
+      top: rem(20);
+    }
+    &:nth-child(3) {
+      top: rem(30);
+    }
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger--active {
+  .hamburger__border {
+    &:nth-child(1) {
+      top : rem(16);
+      left: rem(6);
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+      top: rem(16);
+      transform: rotate(45deg);
+    }
+  }
+}
