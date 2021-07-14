@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 .u-pc {
   display: none;
 }
@@ -14,9 +15,11 @@
   }
 }
 
+/* Google Fonts */
 /* FontFamily */
 body {
-  font-family: "";
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2D2D32;
 }
 
 /* font-weight */
@@ -193,6 +196,12 @@ select::-ms-expand {
 }
 
 /*
+  btn
+*/
+/*
+  contact
+*/
+/*
   drawer
 */
 .drawer {
@@ -250,9 +259,6 @@ select::-ms-expand {
   width: 100%;
 }
 
-/*
-  fnav 
-*/
 /*
   footer
 */
@@ -339,5 +345,29 @@ select::-ms-expand {
 }
 
 /*
+  section-entitle
+*/
+/*
+  section-title
+*/
+/*
+  about
+*/
+/*
+  feature
+*/
+/*
+  flow
+*/
+/*
   mv
+*/
+/*
+  price
+*/
+/*
+  question
+*/
+/*
+  users
 */
