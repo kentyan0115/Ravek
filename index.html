@@ -23,13 +23,16 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script defer type="text/javascript" src="./assets/js/script.js"></script>
+  <!-- スクロールヒント -->
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="l-inner header__inner">
       <h1 class="header__logo"><a href="/"><img src="./assets/img/logo.svg" alt="Ravek"></a></h1>
-      <nav class="gnav">
+      <nav class="gnav u-pc">
         <ul class="gnav__menu">
           <li class="gnav__menu-item"><a href="#feature">特長</a></li>
           <li class="gnav__menu-item"><a href="#users">導入実績</a></li>
@@ -39,6 +42,28 @@
           <li class="gnav__menu-item"><a href="">無料で使ってみる</a></li>
         </ul>
       </nav><!-- /.gnav -->
+
+      <div class="u-sp">
+        <div class="hamburger">
+          <span class="hamburger__border"></span>
+          <span class="hamburger__border"></span>
+          <span class="hamburger__border"></span>
+        </div>
+      </div><!-- /.hamburger -->
+
+      <div class="drawer u-sp">
+        <nav>
+          <ul class="drawer__menu">
+            <li class="drawer__item"><a href="#feature">特長</a></li>
+            <li class="drawer__item"><a href="#users">導入実績</a></li>
+            <li class="drawer__item"><a href="#flow">導入までの流れ</a></li>
+            <li class="drawer__item"><a href="#price">料金プラン</a></li>
+            <li class="drawer__item"><a href="#question">よくある質問</a></li>
+          </ul>
+        </nav>
+        <a href="" class="btn drawer__btn">無料でRavekを使ってみる</a>
+        <a href="" class="btn btn-2 drawer__btn">資料をダウンロードする</a>
+      </div><!-- /.drawer -->
     </div><!-- /.header__inner -->
   </header><!-- /.header -->
 
@@ -46,18 +71,16 @@
 
     <section class="mv">
       <div class="l-inner mv__inner">
-        <div class="mv__content">
-          <h2 class="mv__title">タスク管理は<br>
-            時間をかけず、高速に。</h2>
-          <p class="mv__text">Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br class="u-pc">
-            簡単かつ高速にし、生産性を向上させるツールです。</p>
-          <div class="mv__btns">
-            <a href="" class="mv__btn btn">まずは無料で使ってみる</a>
-            <a href="" class="mv__btn btn">資料をダウンロードする</a>
-          </div>
-        </div><!-- /.mv__content -->
+        <h2 class="mv__title">タスク管理は<br>
+          時間をかけず、高速に。</h2>
+        <p class="mv__text">Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br class="u-pc">
+          簡単かつ高速にし、生産性を向上させるツールです。</p>
         <div class="mv__img">
           <img src="./assets/img/mv.png" alt="タスク管理は時間をかけず、高速に。">
+        </div>
+        <div class="mv__btns">
+          <a href="" class="mv__btn btn">まずは無料で使ってみる</a>
+          <a href="" class="mv__btn btn btn-2">資料をダウンロードする</a>
         </div>
       </div><!-- /.mv__inner -->
     </section><!-- /.mv -->
@@ -66,19 +89,19 @@
       <div class="l-inner about__inner">
         <p class="section-entitle about__entitle">What is Ravek?</p>
         <h2 class="section-title about__entitle">タスク管理の時間を削減するツール</h2>
-        <p class="about__text">Ravek（レイベック）は、<span>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。</p>
+        <p class="about__text">Ravek（レイベック）は、<br class="u-sp"><span>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。</p>
         <p class="about__text">タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br>
           タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。</p>
         <a href="" class="about__btn btn">無料でRavekを使ってみる</a>
       </div><!-- /.about__inner -->
     </section><!-- /.about -->
 
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="l-inner feature__inner">
         <p class="section-entitle feature__entitle">Feature</p>
         <h2 class="section-title feature__title">Ravekの3つの特長</h2>
         <div class="feature__items">
-          <div class="featuer_item">
+          <div class="feature__item">
             <div class="feature__item-img">
               <img src="./assets/img/feature-1.png" alt="タスクの種類・進捗をダッシュボードで確認可能">
             </div>
@@ -92,7 +115,7 @@
               </div>
             </div><!-- /.feature__item-body -->
           </div><!-- /.feature__item -->
-          <div class="featuer_item">
+          <div class="feature__item">
             <div class="feature__item-img">
               <img src="./assets/img/feature-2.png"
                 alt="Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。">
@@ -107,7 +130,7 @@
               </div>
             </div><!-- /.feature__item-body -->
           </div><!-- /.feature__item -->
-          <div class="featuer_item">
+          <div class="feature__item">
             <div class="feature__item-img">
               <img src="./assets/img/feature-3.png" alt="SlackとのAPI連携ツール切り替えの手間を削減">
             </div>
@@ -134,7 +157,7 @@
       </div><!-- /.contact__inner -->
     </div><!-- /.contact -->
 
-    <section class="users">
+    <section class="users" id="users">
       <div class="l-inner users__inner">
         <p class="section-entitle users__entitle">Users</p>
         <h2 class="section-title users__title">導入実績</h2>
@@ -167,7 +190,7 @@
       </div><!-- /.users__inner -->
     </section><!-- /.users -->
 
-    <section class="flow">
+    <section class="flow" id="flow">
       <div class="l-inner flow__inner">
         <p class="section-entitle flow__entitle">Flow</p>
         <h2 class="section-title flow__title">導入までの流れ</h2>
@@ -208,94 +231,98 @@
       </div><!-- /.contact__inner -->
     </div><!-- /.contact -->
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="l-inner price__inner">
         <p class="section-entitle price__entitle">Price</p>
-        <h2 class="section-title price__entitle">料金プラン</h2>
+        <h2 class="section-title price__title">料金プラン</h2>
         <div class="price__table-wrapper">
-
-          <table class="price__table">
-            <thead>
-              <tr>
-                <th class="price__plan">
-                  <p class="price__plan-title">ライト</p>
-                  <p class="price__plan-price">月額 <span>1,980</span> 円</p>
-                  <a href="" class="btn price__plan-btn">無料で使ってみる</a>
-                </th>
-                <th class="price__plan price__plan-recommend">
-                  <p class="price__plan-title">ベーシック</p>
-                  <p class="price__plan-price">月額 <span>2,980</span> 円</p>
-                  <a href="" class="btn price__plan-btn">無料で使ってみる</a>
-                </th>
-                <th class="price__plan">
-                  <p class="price__plan-title">プレミアム</p>
-                  <p class="price__plan-price">月額 <span>4,980</span> 円</p>
-                  <a href="" class="btn price__plan-btn">無料で使ってみる</a>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>プロジェクト数</th>
-                <td>5</td>
-                <td>15</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <th>メンバー数</th>
-                <td>10</td>
-                <td>30</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <th>ストレージ(容量)</th>
-                <td>25GB</td>
-                <td>50GB</td>
-                <td>100GB</td>
-              </tr>
-              <tr>
-                <th>2段階認証</th>
-                <td></td>
-                <td>〇</td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th>IP制限</th>
-                <td></td>
-                <td></td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th>メールサポート</th>
-                <td>〇</td>
-                <td>〇</td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th>チャットサポート</th>
-                <td>〇</td>
-                <td>〇</td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th></th>
-                <td><a href="" class="btn price__table-btn">無料で使ってみる</a></td>
-                <td><a href="" class="btn price__table-btn">無料で使ってみる</a></td>
-                <td><a href="" class="btn price__table-btn">無料で使ってみる</a></td>
-              </tr>
-            </tbody>
-          </table><!-- /.price__table -->
+          <div class="js-scrollable">
+            <table class="price__table">
+              <thead>
+                <tr>
+                  <th class="price__plan"></th>
+                  <th class="price__plan">
+                    <p class="price__plan-title">ライト</p>
+                    <p class="price__plan-price">月額 <span>1,980</span> 円</p>
+                    <a href="" class="btn price__plan-btn">無料で使ってみる</a>
+                  </th>
+                  <th class="price__plan price__plan-recommend">
+                    <div class="price__plan-recommend-wrapper">
+                      <p class="price__plan-title">ベーシック</p>
+                      <p class="price__plan-price">月額 <span>2,980</span> 円</p>
+                      <a href="" class="btn price__plan-btn">無料で使ってみる</a>
+                    </div>
+                  </th>
+                  <th class="price__plan">
+                    <p class="price__plan-title">プレミアム</p>
+                    <p class="price__plan-price">月額 <span>4,980</span> 円</p>
+                    <a href="" class="btn price__plan-btn">無料で使ってみる</a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>プロジェクト数</th>
+                  <td>5</td>
+                  <td>15</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <th>メンバー数</th>
+                  <td>10</td>
+                  <td>30</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <th>ストレージ(容量)</th>
+                  <td>25GB</td>
+                  <td>50GB</td>
+                  <td>100GB</td>
+                </tr>
+                <tr>
+                  <th>2段階認証</th>
+                  <td></td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th>IP制限</th>
+                  <td></td>
+                  <td></td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th>メールサポート</th>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th>チャットサポート</th>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td><a href="" class="btn price__table-btn">無料で使ってみる</a></td>
+                  <td><a href="" class="btn price__table-btn price__table-btn-recommend">無料で使ってみる</a></td>
+                  <td><a href="" class="btn price__table-btn">無料で使ってみる</a></td>
+                </tr>
+              </tbody>
+            </table><!-- /.price__table -->
+          </div><!-- /.js-scrollable -->
         </div><!-- /.price__table-wrapper -->
       </div><!-- /.price__inner -->
     </section><!-- /.price -->
 
-    <section class="question">
+    <section class="question" id="question">
       <div class="l-inner question__inner">
         <p class="section-entitle question__entitle">Question</p>
         <h2 class="section-title question__title">よくある質問</h2>
         <div class="question__items">
           <div class="question__item">
-            <div class="question__item-header js-accordion-open">
+            <div class="question__item-header js-toggle">
               <p class="question__item-entext">Q</p>
               <p class="question__item-text">Ravekはユーザー1人あたりの課金制なのですか？</p>
             </div><!-- /.question__item-header -->
@@ -306,7 +333,7 @@
             </div><!-- /.question__item-body -->
           </div><!-- /.question__item -->
           <div class="question__item">
-            <div class="question__item-header js-accordion-open">
+            <div class="question__item-header js-toggle">
               <p class="question__item-entext">Q</p>
               <p class="question__item-text">Ravekはユーザー1人あたりの課金制なのですか？</p>
             </div><!-- /.question__item-header -->
@@ -317,7 +344,7 @@
             </div><!-- /.question__item-body -->
           </div><!-- /.question__item -->
           <div class="question__item">
-            <div class="question__item-header js-accordion-open">
+            <div class="question__item-header js-toggle">
               <p class="question__item-entext">Q</p>
               <p class="question__item-text">Ravekはユーザー1人あたりの課金制なのですか？</p>
             </div><!-- /.question__item-header -->
@@ -328,7 +355,7 @@
             </div><!-- /.question__item-body -->
           </div><!-- /.question__item -->
           <div class="question__item">
-            <div class="question__item-header js-accordion-open">
+            <div class="question__item-header js-toggle">
               <p class="question__item-entext">Q</p>
               <p class="question__item-text">Ravekはユーザー1人あたりの課金制なのですか？</p>
             </div><!-- /.question__item-header -->
@@ -355,29 +382,29 @@
   <footer class="footer">
     <div class="l-inner footer__inner">
       <div class="footer__sns">
-        <p class="footer__sns-text"></p>
+        <p class="footer__sns-text">Share on SNS</p>
         <div class="footer__sns-logos">
-          <div class="footer__sns-logo">
+          <a href="" class="footer__sns-logo">
             <img src="./assets/img/twitter.png" alt="Twitter">
-          </div>
-          <div class="footer__sns-logo">
+          </a>
+          <a href="" class="footer__sns-logo">
             <img src="./assets/img/instagram.png" alt="Instagram">
-          </div>
-          <div class="footer__sns-logo">
+          </a>
+          <a class="footer__sns-logo">
             <img src="./assets/img/facebook.png" alt="Facebook">
-          </div>
+          </a>
         </div><!-- /.footer__sns-logos -->
       </div><!-- /.footer__sns -->
       <div class="footer__content">
         <div class="footer__logo">
-          <img src="./assets/img/logo.svg" alt="Rabek">
+          <img src="./assets/img/logo2.svg" alt="Rabek">
         </div>
         <nav class="footer__nav">
-          <ul class="footer__nav-menu">
-            <li class="footer__nav-item"><a href="">会社概要</a></li>
-            <li class="footer__nav-item"><a href="">プライバシーポリシー</a></li>
-            <li class="footer__nav-item"><a href="">利用規約</a></li>
-            <li class="footer__nav-item"><a href="">お問い合わせ</a></li>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="">会社概要</a></li>
+            <li class="footer__menu-item"><a href="">プライバシーポリシー</a></li>
+            <li class="footer__menu-item"><a href="">利用規約</a></li>
+            <li class="footer__menu-item"><a href="">お問い合わせ</a></li>
           </ul>
         </nav><!-- /.footer__nav -->
         <p class="footer__copyright"><small><span>&copy; Ravek Inc. 2021</span><span>Illustration by

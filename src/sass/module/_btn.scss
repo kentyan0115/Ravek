@@ -2,5 +2,24 @@
   btn
 */
 .btn {
-  
+  text-align: center;
+  border-radius: rem(29);
+  box-shadow: 0px rem(4) rem(6) rgba(0, 0, 0, 0.24);
+  font-weight: bold;
+  display: block;
+  height: rem(58);
+  line-height: rem(54);
+  font-size: rem(18);
+  width: rem(300);
+  max-width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background: $main-color;
+  position: relative;
+  transition: 0.3s;
+  top: 0;
+  &:hover {
+    top: rem(-3);
+    opacity: 1;
+  }
 }

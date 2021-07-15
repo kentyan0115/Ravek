@@ -1,40 +1,40 @@
 "use strict";
 
 jQuery(function () {
-  // ドロワー 
   jQuery('.hamburger').on('click', function () {
     jQuery(this).toggleClass('hamburger--active');
-    jQuery('body').toggleClass('body--fixed');
 
     if (jQuery(this).hasClass('hamburger--active')) {
       jQuery('.drawer').addClass('drawer--active');
+      jQuery('body').css('overflow', 'hidden');
     } else {
       jQuery('.drawer').removeClass('drawer--active');
+      jQuery('body').css('overflow', 'auto');
     }
   });
-  jQuery('.drawer__item').on('click', function () {
+  jQuery('.drawer-item').on('click', function () {
     jQuery('.hamburger').toggleClass('hamburger--active');
-    jQuery('body').removeClass('body--fixed');
 
     if (jQuery(this).hasClass('drawer--active')) {
       jQuery('.drawer').addClass('drawer--active');
+      jQuery('body').css('overflow', 'hidden');
     } else {
       jQuery('.drawer').removeClass('drawer--active');
+      jQuery('body').css('overflow', 'auto');
     }
-  }); // フローティングボタン
-
-  jQuery('.to-top').on('click', function () {
-    jQuery('body, html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
   });
-  jQuery('.to-top').hide();
-  jQuery(window).on("scroll", function () {
-    if (jQuery(this).scrollTop() > 300) {
-      jQuery('.to-top').fadeIn();
-    } else {
-      jQuery('.to-top').hide();
+  jQuery('.question__item-body').hide();
+  jQuery('.js-toggle').on('click', function () {
+    jQuery(this).next('.question__item-body').stop(true, false).slideToggle();
+    jQuery(this).toggleClass('question__item-open');
+  }); // スクロールヒント
+
+  new ScrollHint('.js-scrollable', {
+    scrollHintIconAppendClass: 'scroll-hint-icon-white',
+    // white-icon will appear
+    applyToParents: true,
+    i18n: {
+      scrollable: 'スクロールできます'
     }
   });
 });

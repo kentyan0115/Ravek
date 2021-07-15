@@ -2,5 +2,70 @@
   footer
 */
 .footer {
+  background: #000;
+  padding: rem(40) 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__inner {
+
+}
+
+.footer__sns {
+  margin-bottom: rem(32);
+}
+
+.footer__sns-text {
+  font-weight: 700;
+  font-family: $second-font-family;
+  font-size: rem(18);
+  margin-bottom: rem(12);
+}
+
+.footer__sns-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__sns-logo {
+  width: rem(24);
+  &:not(:last-child) {
+    margin-right: rem(18);
+  }
+}
+
+.footer__content {
   
+}
+
+.footer__logo {
+  width: rem(69);
+  margin: 0 auto;
+  margin-bottom: rem(14);
+}
+
+.footer__nav {
+
+}
+
+.footer__menu {
+  margin-bottom: rem(28);
+}
+
+.footer__menu-item {
+  font-weight: 700;
+  &:not(:last-child) {
+    margin-bottom: rem(14);
+  }
+}
+
+.footer__copyright {
+  font-size: rem(10);
+  span {
+    display: block;
+    &:first-child {
+      margin-bottom: rem(10);
+    }
+  }
 }

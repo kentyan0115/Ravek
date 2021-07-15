@@ -2,5 +2,10 @@
   section-entitle
 */
 .section-entitle {
-  
+  font-family: $second-font-family;
+  font-weight: 700;
+  font-size: rem(22);
+  text-align: center;
+  margin-bottom: rem(10);
+  color: #9F9EC1;
 }

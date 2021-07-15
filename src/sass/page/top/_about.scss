@@ -2,5 +2,22 @@
   about
 */
 .about {
-  
+  margin-bottom: rem(60);
+}
+
+.about__entitle {
+  margin-bottom: rem(20);
+}
+
+.about__title {
+
+}
+
+.about__text {
+  margin-bottom: rem(25);
+  text-align: center;
+  font-size: rem(16);
+  span {
+    font-weight: bold;
+  }
 }

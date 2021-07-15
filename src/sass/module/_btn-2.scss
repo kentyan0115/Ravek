@@ -1,0 +1,10 @@
+/*  
+  btn-2
+*/
+.btn-2 {
+  &.btn {
+    color: $main-color;
+    background: #fff;
+    border: rem(2) solid $main-color;
+  }
+}

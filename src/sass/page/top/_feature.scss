@@ -2,5 +2,55 @@
   feature
 */
 .feature {
-  
+  background: #F9F9F9;
+  padding: rem(60) 0;
+}
+
+.feature__entitle {
+
+}
+
+.feature__title {
+  margin-bottom: rem(40);
+}
+
+.feature__items {
+
+}
+
+.feature__item {
+  &:not(:last-child) {
+    margin-bottom: rem(60);
+  }
+}
+.feature__item-body {
+  background: #fff;
+  margin: 0 calc(50% - 50vw);
+  padding: rem(50) rem(20) rem(40);
+  border-radius: rem(16);
+  margin-top: rem(-100);
+}
+
+.feature__item-number {
+  font-weight: 700;
+  font-size: rem(42);
+  font-family: $second-font-family;
+  color: $main-color;
+}
+
+.feature__item-title {
+  font-weight: 700;
+  font-size: rem(22);
+  margin-bottom: rem(5);
+}
+
+.feature__item-text {
+  font-size: rem(14);
+  line-height: 1.6;
+}
+
+.feature__item-img {
+  width: 80%;
+  margin: 0 auto;
+  max-width: rem(500);
 }

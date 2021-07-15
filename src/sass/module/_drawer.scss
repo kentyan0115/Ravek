@@ -3,41 +3,50 @@
 */
 .drawer {
   position: fixed;
-  z-index : 200;
-  top  : rem(100);
-  left : 0;
+  z-index: 200;
+  top: rem(52);
+  left: 0;
   color: #000;
-  background: #fff;
+  background: #EDECFC;
   transform: translateX(100%);
   transition: all 0.6s;
   width: 100%;
   height: 100%;
-  padding-top: rem(40);
+  padding-top: rem(82);
 }
 
 .drawer__menu {
-    background: #fff;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: rem(50);
+  padding-left: rem(105);
 }
 
 .drawer__item {
-      list-style-type: none;
-      padding: 0;
-      width: 100%;
-      padding: 0.8em 0;
-      font-size: rem(16);
-      text-align: center;
-      &:last-child {
-        padding-bottom: 0;
-        border-bottom: none;
-      }
-      &:hover{
-        background :#fff;
-      }
-    }
+  width: rem(300);
+  margin: 0 auto;
+  font-size: rem(24);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: rem(20);
+    height: rem(20);
+    border: rem(2) solid #64629D;
+    top: rem(10);
+    transform: rotate(45deg);
+    left: rem(-40);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(30);
+  }
+}
 
+.drawer__btn {
+  &:first-of-type {
+    margin-bottom: rem(25);
+  }
+}
 
 /* このクラスを、jQueryで付与・削除する */
 .drawer--active {

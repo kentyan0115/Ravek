@@ -2,5 +2,38 @@
   mv
 */
 .mv {
-  
+  background: #EDECFC;
+  padding: rem(60) 0;
+  margin-bottom: rem(80);
+}
+
+.mv__inner {
+
+}
+
+.mv__title {
+  font-weight: 700;
+  font-size: rem(30);
+  line-height: 1.6;
+  margin-bottom: rem(16);
+}
+
+.mv__text {
+  font-size: rem(16);
+}
+
+.mv__btns {
+
+}
+
+.mv__btn {
+  &:first-child {
+    margin-bottom: rem(32);
+  }
+}
+
+.mv__img {
+  width: 80%;
+  max-width: rem(500);
+  margin: 0 auto;
 }

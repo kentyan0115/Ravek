@@ -2,5 +2,57 @@
   flow
 */
 .flow {
-  
+  background: #F9F9F9;
+  padding: rem(60) 0;
+}
+
+.flow__entitle {
+
+}
+
+.flow__title {
+  margin-bottom: rem(64);
+}
+
+.flow__items {
+
+}
+
+.flow__item {
+  &:not(:last-child) {
+    margin-bottom: rem(80);
+  }
+}
+
+.flow__item-img {
+  background: #EDECFC;
+  border-radius: rem(30);
+  padding: rem(25) 0;
+  position: relative;
+  margin-bottom: rem(16);
+  img {
+    width: 60%;
+    margin: 0 auto;
+  }
+} 
+
+.flow__item-number {
+  font-weight: 700;
+  font-family: $second-font-family;
+  font-size: rem(48);
+  position: absolute;
+  color: $main-color;
+  left: 0;
+  top: rem(-30);
+}
+
+.flow__item-title {
+  text-align: center;
+  font-size: rem(20);
+  font-weight: 700;
+  margin-bottom: rem(8);
+}
+
+.flow__item-text { 
+
 }

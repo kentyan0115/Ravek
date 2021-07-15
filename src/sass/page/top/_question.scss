@@ -2,5 +2,78 @@
   question
 */
 .question {
-  
+  background: #F9F9F9;
+  padding: rem(60) 0;
+}
+
+.question__entitle {
+
+}
+
+.question__title {
+  margin-bottom: rem(40);
+}
+
+.question__items {
+
+}
+
+.question__item {
+  &:not(:last-child) {
+    margin-bottom: rem(24);
+  }
+}
+
+.question__item-header {
+  background: $main-color;
+  display: flex;
+  padding: rem(10) rem(15);
+  padding-right: rem(30);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: rem(16);
+  border-radius: rem(4);
+  cursor: pointer;
+  position :relative;
+  &::after, &::before {
+    position: absolute;
+    content: '';
+    width: rem(18);
+    height: rem(3);
+    background: #fff;
+    top: 50%;
+    right: rem(10);
+    transform: translateY(-50%);
+  }
+  &::before {
+    top: 48%;
+    transition: .2s;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+.question__item-open {
+  &::before {
+    transform: rotate(0);
+  }
+}
+
+.question__item-entext {
+  font-weight: 700;
+  font-size: rem(22);
+  margin-right: rem(15);
+  line-height: 1;
+}
+
+.question__item-text {
+  font-size: rem(16);
+  line-height: 1.6;
+}
+
+.question__item-body {
+  background: #fff;
+  display: flex;
+  padding: rem(10) rem(15);
+  border-radius: rem(4);
 }

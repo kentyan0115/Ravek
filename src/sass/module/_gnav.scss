@@ -2,5 +2,43 @@
   gnav
 */
 .gnav {
-  
+  height: inherit;
+}
+
+.gnav__menu {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gnav__menu-item {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: rem(10);
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(3);
+    background: $main-color;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .4s;
+  }
+  &:hover {
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
+  a {
+    display: inline-block;
+    padding: rem(20) 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

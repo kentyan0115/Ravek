@@ -2,5 +2,18 @@
   contact
 */
 .contact {
-  
+  background: $font-color;
+  padding: rem(40) 0;
+}
+
+.contact__text {
+  color: #fff;
+  font-weight: 700;
+  font-size: rem(18);
+  text-align: center;
+  margin-bottom: rem(25);
+}
+
+.contact__btn {
+
 }
