@@ -1,14 +1,14 @@
 //デスクトップのみ表示
 .u-pc {
   display: none;
-  @include mq("lg") {
+  @include mq("sm") {
     display: block;
   }
 }
 
 //モバイルのみ表示
 .u-sp {
-  @include mq("lg") {
+  @include mq("sm") {
     display: none;
   }
 }

@@ -18,6 +18,14 @@
   position: relative;
   transition: 0.3s;
   top: 0;
+  border: rem(2) solid $main-color;
+  @include mq(sm) {
+    font-size: rem(24);
+    width: rem(400);
+    height: rem(70);
+    line-height: rem(65);
+    border-radius: rem(50);
+  }
   &:hover {
     top: rem(-3);
     opacity: 1;

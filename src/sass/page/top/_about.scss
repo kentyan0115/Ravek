@@ -2,21 +2,31 @@
   about
 */
 .about {
-  margin-bottom: rem(60);
+  
+}
+
+.about__inner {
+  
 }
 
 .about__entitle {
-  margin-bottom: rem(20);
 }
 
 .about__title {
-
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(30); 
+  }
 }
 
 .about__text {
   margin-bottom: rem(25);
   text-align: center;
   font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18);
+    margin-bottom: rem(35);
+  }
   span {
     font-weight: bold;
   }

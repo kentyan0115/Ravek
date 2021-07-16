@@ -6,14 +6,26 @@
   padding: rem(40) 0;
   text-align: center;
   color: #fff;
+  @include mq(sm) {
+    padding: rem(25) 0;
+  }
 }
 
 .footer__inner {
-
+  max-width: rem(1200);
+  @include mq(sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }
 
 .footer__sns {
   margin-bottom: rem(32);
+  @include mq(sm) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__sns-text {
@@ -21,6 +33,9 @@
   font-family: $second-font-family;
   font-size: rem(18);
   margin-bottom: rem(12);
+  @include mq(sm) {
+    margin-bottom: rem(5);
+  }
 }
 
 .footer__sns-logos {
@@ -36,27 +51,41 @@
 }
 
 .footer__content {
-  
+  @include mq(sm) {
+    text-align: left;
+  }
 }
 
 .footer__logo {
   width: rem(69);
   margin: 0 auto;
   margin-bottom: rem(14);
+  @include mq(sm) {
+    margin-bottom: rem(15);
+    margin-left: 0;
+  }
 }
 
 .footer__nav {
-
 }
 
 .footer__menu {
   margin-bottom: rem(28);
+  @include mq(sm) {
+    display: flex;
+    margin-bottom: rem(15);
+  }
 }
 
 .footer__menu-item {
   font-weight: 700;
+  font-size: rem(14);
   &:not(:last-child) {
     margin-bottom: rem(14);
+    @include mq(sm) {
+      margin-bottom: 0;
+      margin-right: rem(17);
+    }
   }
 }
 
@@ -64,8 +93,14 @@
   font-size: rem(10);
   span {
     display: block;
+    @include mq(sm) {
+      display: inline-block;
+    }
     &:first-child {
       margin-bottom: rem(10);
+      @include mq(sm) {
+        margin-bottom: 0;
+      }
     }
   }
 }

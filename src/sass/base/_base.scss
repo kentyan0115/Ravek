@@ -5,12 +5,11 @@ html {
     font-size: #{16 / strip-unit($screen-min) * 100}vw;
   }
 
-  
   //375px~787px
   font-size: 16px;
 
   //787px~inner
-  @include mq("md") {
+  @include mq("sm") {
     font-size: #{16 / map-get($breakpoints, "lg") * 100}vw;
   }
 
@@ -22,7 +21,7 @@ html {
 
 /* pcの電話番号発信対応 */
 a[href^="tel:"] {
-  @include mq("md") {
+  @include mq("sm") {
     pointer-events: none;
   }
 }
@@ -32,7 +31,7 @@ a {
   text-decoration: none;
   color: inherit;
   transition: opacity 0.3s;
-  @include mq("md") {
+  @include mq("sm") {
     &:hover {
       opacity: 0.8;
     }
@@ -41,4 +40,11 @@ a {
 
 body {
   letter-spacing: 0.03em;
+}
+
+section {
+  padding: rem(60) 0;
+  @include mq(sm) {
+    padding: rem(100) 0;
+  }
 }

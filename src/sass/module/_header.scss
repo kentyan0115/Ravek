@@ -3,6 +3,9 @@
 */
 .header {
   height: rem(52);
+  @include mq(sm) {
+    height: rem(72);
+  }
 }
 
 .header__inner {

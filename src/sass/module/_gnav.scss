@@ -17,9 +17,14 @@
   display: flex;
   align-items: center;
   position: relative;
+  font-size: rem(14);
+  font-weight: 700;
+  &:not(:last-child) {
+    margin-right: rem(16);
+  }
   &::after {
     position: absolute;
-    bottom: rem(10);
+    bottom: rem(20);
     left: 0;
     content: '';
     width: 100%;
@@ -36,9 +41,21 @@
   }
   a {
     display: inline-block;
-    padding: rem(20) 0;
     &:hover {
       opacity: 1;
     }
   }
+}
+
+.gnav__menu-item-btn {
+  &::after {
+    width: 0;
+  }
+}
+
+a.gnav__btn {
+  height: rem(40);
+  line-height: rem(35);
+  width: rem(180);
+  font-size: rem(16);
 }

@@ -2,20 +2,24 @@
   question
 */
 .question {
-  background: #F9F9F9;
-  padding: rem(60) 0;
+  background: #f9f9f9;
+}
+
+.question__inner {
+  max-width: rem(920);
 }
 
 .question__entitle {
-
 }
 
 .question__title {
   margin-bottom: rem(40);
+  @include mq(sm) {
+    margin-bottom: rem(60);
+  }
 }
 
 .question__items {
-
 }
 
 .question__item {
@@ -34,20 +38,28 @@
   margin-bottom: rem(16);
   border-radius: rem(4);
   cursor: pointer;
-  position :relative;
-  &::after, &::before {
+  position: relative;
+  @include mq(sm) {
+    border-radius: rem(10);
+    padding: rem(15) rem(20);
+  }
+  &::after,
+  &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: rem(18);
     height: rem(3);
     background: #fff;
     top: 50%;
     right: rem(10);
     transform: translateY(-50%);
+    @include mq(md) {
+      right: rem(20);
+    }
   }
   &::before {
     top: 48%;
-    transition: .2s;
+    transition: 0.2s;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
   }
@@ -76,4 +88,8 @@
   display: flex;
   padding: rem(10) rem(15);
   border-radius: rem(4);
+  @include mq(sm) {
+    border-radius: rem(10);
+    padding: rem(15) rem(20);
+  }
 }

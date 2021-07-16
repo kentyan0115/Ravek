@@ -1,6 +1,6 @@
 @import "../setting/_breakpoints";
 
-@mixin mq($mediaquery: md) {
+@mixin mq($mediaquery: sm) {
   @media #{map-get($mediaquerys, $mediaquery)} {
     @content;
   }
