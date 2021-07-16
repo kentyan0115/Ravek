@@ -310,15 +310,15 @@ select::-ms-expand {
   transition: all 0.6s;
   width: 100%;
   height: 100%;
-  padding-top: 82px;
-  padding-top: 5.125rem;
+  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 .drawer__menu {
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 50px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   padding-left: 105px;
   padding-left: 6.5625rem;
 }
@@ -348,13 +348,13 @@ select::-ms-expand {
   left: -2.5rem;
 }
 .drawer__item:not(:last-child) {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .drawer__btn:first-of-type {
-  margin-bottom: 25px;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* このクラスを、jQueryで付与・削除する */
@@ -1055,8 +1055,8 @@ a.gnav__btn {
 
 .mv__title {
   font-weight: 700;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.6;
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -1251,7 +1251,7 @@ a.gnav__btn {
   padding: 28px 8px;
   padding: 1.75rem 0.5rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .price__plan {
     padding: 1.875rem 0.9375rem;
   }

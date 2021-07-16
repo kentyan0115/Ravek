@@ -102,7 +102,7 @@
   background: $font-color;
   color: #fff;
   padding: rem(28) rem(8);
-  @include mq(md) {
+  @include mq(sm) {
     padding: rem(30) rem(15); 
   }
   &:first-child {
