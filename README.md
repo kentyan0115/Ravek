@@ -1,3 +1,3 @@
 # Ravek
 ## デモサイト
-### sass、gulp使用、スマホファースト、BEM記法
+### Sass・Gulp使用、スマホファースト、BEM記法
